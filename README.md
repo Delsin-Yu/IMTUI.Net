@@ -2,7 +2,9 @@
 
 An immediate-mode terminal UI framework for .NET, with controls and layout behavior inspired by Godot Engine’s GUI system.
 
-IMTUI is a side project, and may not be updated often, so use it as your own risk. Our vision is to gradually support as many Terminal-Compatible Godot Controls as possible.
+IMTUI is a side project and may not be updated often, so use it at your own risk. Our vision is to gradually support as many Terminal-Compatible Godot Controls as possible.
+
+<img width="860" height="625" alt="image" src="https://github.com/user-attachments/assets/8a98fe3e-6c23-4076-a24f-031c570b9643" />
 
 ---
 
