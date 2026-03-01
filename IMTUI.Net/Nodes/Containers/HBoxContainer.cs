@@ -1,19 +1,11 @@
 ﻿namespace IMTUI.Nodes.Containers;
 
-internal class HBoxContainer : Control
+internal class HBoxContainer : Container
 {
     public int Separation { get; set; }
-    public override void Layout()
-    {
-        var accumulatedWidth = 0;
-        var maxHeight = 0;
-        foreach (var child in Children)
-        {
-            child.Layout();
-            child.Position = (accumulatedWidth, 0);
-            accumulatedWidth += child.Size.Width;
-            accumulatedWidth += Separation;
-            if (child.Size.Height > maxHeight) maxHeight = child.Size.Height;
-        }
-    }
+
+    public override Size GetMinimumSize() => GetLinearMinimumSize(Separation, LayoutAxis.Horizontal);
+
+    public override void Layout(Size availableSize) =>
+        LayoutLinearChildren(availableSize, Separation, LayoutAxis.Horizontal);
 }

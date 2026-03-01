@@ -61,6 +61,8 @@ public record struct Size(int Width, int Height)
     /// </summary>
     public static readonly Size One  = (1, 1);
 
+    public static readonly Size Max = (int.MaxValue, int.MaxValue);
+
     /// <summary>
     /// Converts a tuple to a <see cref="Size"/>.
     /// </summary>
