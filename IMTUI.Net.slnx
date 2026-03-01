@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="IMTUI.Net.Usage/IMTUI.Net.Usage.csproj" />
+  <Project Path="IMTUI.Net/IMTUI.Net.csproj" />
+</Solution>
